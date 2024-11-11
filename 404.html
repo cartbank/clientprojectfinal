@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href = "css/reset.css">
+    <link rel = "stylesheet" href = "css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Student Success Portal</title>
+</head>
+<body>
+    <!--added aside tag to avoid throwing a warning with axe regarding missing landmark tags-->
+    <aside>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    </aside>
+    <header>
+        <div class = "holdsumsilogo">
+            <img class = "umsilogo" src = "images/umsi_logo.jpg" alt = "The UMSI logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "msi_advising.html">UMSI Advising</a></li>
+                <li><a href = "study_spaces.html">Study Spaces</a></li>
+                <li><a href = "tutoring.html">Tutoring</a></li>
+            </ul>
+        </nav>
+        <h1>404 Not Found</h1>
+    </header>
+    <main class = "maincontainer" id = "main">
+        <p>Sorry! We couldn't find the page you were looking for.</p>
+    </main>
+    <footer>
+        <img src = "images/umsi-logo-vert-u.png" alt = "UMSI logo">
+        <p><a href = "https://www.si.umich.edu/privacy-statement">Privacy Statement</a> | <a href = "https://www.si.umich.edu/about-umsi/contact-us">Contact Us</a></p>
+        <p>The University of Michigan &copy; <span id="year"></span></p>
+        <!--adds javascript for displaying the date-->
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>
